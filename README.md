@@ -1,12 +1,14 @@
 # RNBO Webpage Example
 
-TODO: Update readme
+still under construction.
+Details are written on my [blog](https://junichi.io/blog/max-msp-rnbo)
 
 ## Basic tutorial
 
-* see basic-tutorial folder
-
-Feature : Setting own parameter
+* basic-tutorial folder
 
 - guardrails.js : you don't need to include this but it will help to check some common error
 - app.js : controling RNBO script
+
+## Multifader Prototype
+* multi-fader folder

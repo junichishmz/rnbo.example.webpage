@@ -1,5 +1,8 @@
 .DS_STORE
 
+xypad-experiment/
+
+
 # Logs
 logs
 *.log
