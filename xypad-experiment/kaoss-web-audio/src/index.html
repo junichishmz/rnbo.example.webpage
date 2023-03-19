@@ -1,0 +1,68 @@
+<form data-blok="kaoss">
+	<fieldset name="xypad" data-blok="xypad">
+		<button type="button" name="xyPoint" aria-label="xy-point in coordinate"></button>
+	</fieldset>
+	<fieldset data-blok="radio-group">
+		<label aria-label="sine wave">
+			<input type="radio" name="wave" value="sine">
+			<svg><use xlink:href="#icon-sine"></use></svg>
+		</label>
+		<label aria-label="saw wave">
+			<input type="radio" name="wave" value="sawtooth" checked>
+			<svg><use xlink:href="#icon-saw"></use></svg>
+		</label>
+		<label aria-label="square wave">
+			<input type="radio" name="wave" value="square">
+			<svg><use xlink:href="#icon-square"></use></svg>
+		</label>
+		<label aria-label="triangle wave">
+			<input type="radio" name="wave" value="triangle">
+			<svg><use xlink:href="#icon-triangle"></use></svg>
+		</label>
+	</fieldset>
+	<fieldset data-blok="radio-group">
+		<label aria-label="allpass filter">
+			<input type="radio" name="filter" value="allpass">
+			<span>allpass</span>
+		</label>
+		<label aria-label="lowpass filter">
+			<input type="radio" name="filter" value="lowpass">
+			<span>lowpass</span>
+		</label>
+		<label aria-label="highpass filter">
+			<input type="radio" name="filter" value="highpass" checked>
+			<span>highpass</span>
+		</label>
+		<label aria-label="bandpass filter">
+			<input type="radio" name="filter" value="bandpass">
+			<span>bandpass</span>
+		</label>
+	</fieldset>
+	<label aria-label="main gain">
+		<input type="range" data-blok="range" name="gain" max="1" step="0.05" value="0.5">
+	</label>
+	<label aria-label="Hue slider">
+		<input type="range" data-blok="range" name="hue" max="360" value="180">
+	</label>
+	<details>
+		<summary>KAOSS! v.1.0.0</summary>
+		<strong>finger-users:</strong> for best results, drag your finger around the pad, instead of lifting and resting.
+		<strong>keyboard-users:</strong> toggle sound with “space”, then use “arrow”-keys. Hold down “shift” to move in larger intervals.
+	</details>
+</form>
+
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>jsKaoss Icons</title>
+	<symbol id="icon-saw" viewBox="0 0 24 24">
+		<path d="M3 12h5l4 8v-16l4 8h5" />
+	</symbol>
+	<symbol id="icon-sine" viewBox="0 0 24 24">
+		<path d="M21 12h-2c-.894 0 -1.662 -.857 -1.761 -2c-.296 -3.45 -.749 -6 -2.749 -6s-2.5 3.582 -2.5 8s-.5 8 -2.5 8s-2.452 -2.547 -2.749 -6c-.1 -1.147 -.867 -2 -1.763 -2h-2" />
+	</symbol>
+	<symbol id="icon-square" viewBox="0 0 24 24">
+		<path d="M3 12h5v8h4v-16h4v8h5" />
+	</symbol>
+	<symbol id="icon-triangle" viewBox="0 0 24 24">
+		<path d="M 4 14 L 8 6 L 16 20 L 21 12" />
+	</symbol>
+</svg>
