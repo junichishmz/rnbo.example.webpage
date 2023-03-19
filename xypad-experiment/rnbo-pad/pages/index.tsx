@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import Message from '../components/Message'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -59,6 +60,8 @@ export default function Home() {
           </div>
         </div>
 
+        
+
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -101,6 +104,8 @@ export default function Home() {
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </a>
+
+          <Message/>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
